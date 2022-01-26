@@ -4,12 +4,17 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/about.md
+  label: About
+  match: "**/*"
+  read_only: false
 - type: directory
   path: src/about.md
   label: About page
   create: all
   match: "*.md"
-  new_doc_ext: ''
+  new_doc_ext: app
 - type: heading
   label: Posts
 - type: directory
